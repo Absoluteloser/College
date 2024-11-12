@@ -28,17 +28,20 @@ public class LRU{
             int currentPage=referenceString[i];
             if(frameStack.contains(currentPage)){
                 //found
-                frameStack.remove(currentPage);
+                frameStack.remove((Integet)currentPage);
+                //readd as the most currentpage
                 frameStack.push(currentPage);
                 hits++;
             }
             //not found
-            if(frameStack.size()==numberOfFrames){
+            else{
+                if(frameStack.size()==numberOfFrames){
                 //added this dont know why ???????? will see later
                 frameStack.remove(0);
             }
             frameStack.push(currentPage);
             faults++;
+            }
         }
         for(int j=0;j<frames;++j){
             memorylayout[i][j]=(j<frameStack.size())?frameStack.get(j):-1;
