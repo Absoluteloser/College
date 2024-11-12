@@ -17,7 +17,7 @@ public class FIFO{
         frames=Integer.parseInt(br.readline());
         System.out.println("enter the length of refernce string");
         ref_len=Integer.parseInt(br.readline());
-        buffer=new int[frames];
+        buffer=new int[frames]; 
         references=new int[ref_len];
         memorylayout=new int[ref_len][frames];
         for(int i=0;i<frames;++i){

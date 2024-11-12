@@ -28,7 +28,7 @@ public class LRU{
             int currentPage=referenceString[i];
             if(frameStack.contains(currentPage)){
                 //found
-                frameStack.remove((Integet)currentPage);
+                frameStack.remove((Integer)currentPage);
                 //readd as the most currentpage
                 frameStack.push(currentPage);
                 hits++;
