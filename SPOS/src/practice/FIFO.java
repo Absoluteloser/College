@@ -7,7 +7,7 @@ public class FIFO {
     public static void main(String[] args) throws IOException {
         int numberOfFrames;
         int numberOfReferences;
-        int buffer[];a
+        int buffer[];
         int references[];
         int memoryLayout[][];
         int misses = 0;
@@ -77,7 +77,7 @@ public class FIFO {
         System.out.println("\nMemory Layout:");
         for(int i=0;i<numberOfReferences;++i){
             for(int j=0;j<numberOfFrames;++j){
-                System.out.println("%3d",memoryLayout[i][j]);
+                System.out.printf("%3d",memoryLayout[i][j]);
             }
             System.out.println();
         }
