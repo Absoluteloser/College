@@ -71,3 +71,70 @@ public class SchedulingFCFS{
         System.out.println("Average turn around time",(avgtat/n));
     }
 }
+/*
+Start
+  |
+  v
+Input Number of Processes (n)
+  |
+  v
+For each process (1 to n):
+  - Input Process ID, Arrival Time, Burst Time
+  |
+  v
+Sort Processes by Arrival Time using Comparable
+  |
+  v
+Initialize:
+  - Completion Time
+  - Turnaround TimeStart
+  |
+  v
+Input Number of Processes (n)
+  |
+  v
+For each process (1 to n):
+  - Input Process ID, Arrival Time, Burst Time
+  |
+  v
+Sort Processes by Arrival Time using Comparable
+  |
+  v
+Initialize:
+  - Completion Time
+  - Turnaround Time
+  - Waiting Time
+  - Accumulate total waiting and turnaround times
+  |
+  v
+Calculate for each process:
+  - Completion Time
+  - Turnaround Time
+  - Waiting Time
+  |
+  v
+Display Process Table
+  |
+  v
+Calculate and Display Averages
+  |
+  v
+End
+  - Waiting Time
+  - Accumulate total waiting and turnaround times
+  |
+  v
+Calculate for each process:
+  - Completion Time
+  - Turnaround Time
+  - Waiting Time
+  |
+  v
+Display Process Table
+  |
+  v
+Calculate and Display Averages
+  |
+  v
+End
+*/
