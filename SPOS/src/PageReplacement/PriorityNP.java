@@ -49,6 +49,10 @@ public class PriorityNP{
                 }
             }
             if(currentprocess!=null){
+                //csb tca wtb 
+                //completion time=start time-burst time
+                //turnaround time=completion time-arrival time
+                //waiting time=turnaround time-burst time
                 currentprocess.completion_time=currentprocess.arrival_time+currentprocess.burst_time;
                 currentprocess.turn_around_time=currentprocess.completion_time-currentprocess.arrival_time;
                 currentprocess.waiting_time=currentprocess.turn_around_time-currentprocess.burst_time;
