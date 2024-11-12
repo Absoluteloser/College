@@ -8,7 +8,7 @@ public class FIFO{
         int buffer[];
         int reference[];
         int mem_layout[][];
-        System.out.println("enter the number of framesa");
+        System.out.println("enter the number of frames");
         frames=Integer.ParseInt(br.readLine());
         System.out.println("enter the length of reference string");
         ref_len=Integer.parseInt(br.readLine());
