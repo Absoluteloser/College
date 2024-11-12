@@ -1,2 +1,2 @@
 # College
-will contain all the code assigned by colletge
+will contain all the code assigned by college
