@@ -1,4 +1,28 @@
-package PageReplacement;
+/**
+ * This class implements the FIFO (First-In-First-Out) page replacement algorithm.
+ * It reads the number of frames and the reference string from the user, simulates
+ * the FIFO page replacement process, and displays the memory layout after each reference.
+ * It also calculates and displays the total number of hits, hit ratio, and total number of misses.
+ * 
+ * The FIFO algorithm works by replacing the oldest page in memory with the new page when a page fault occurs.
+ * 
+ * The program performs the following steps:
+ * 1. Reads the number of frames and the length of the reference string from the user.
+ * 2. Initializes the buffer (frames) and memory layout.
+ * 3. Reads the reference string from the user.
+ * 4. Simulates the FIFO page replacement process:
+ *    - Checks if the current reference is already in the buffer (hit).
+ *    - If not, replaces the oldest page in the buffer with the new reference (miss).
+ *    - Updates the memory layout after each reference.
+ * 5. Displays the memory layout after processing all references.
+ * 6. Displays the total number of hits, hit ratio, and total number of misses.
+ * 
+ * Note: The buffer is initialized with -1 to indicate empty frames.
+ * 
+ * @throws IOException if an I/O error occurs while reading input from the user.
+ */
+import PageReplacement;
+package practice;
 
 import java.util.*;
 import java.io.*;
