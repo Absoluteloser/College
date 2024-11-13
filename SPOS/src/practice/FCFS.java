@@ -40,7 +40,7 @@ public class FCFS{
             process_queue[i]=new Process(id,arrival,burst);
         }
         Arrays.sort(process_queue,Comparator.comparingInt(p->p.starttime));
-        for(int i=0;i<n;++i){
+        for(int i=0;i<numberofprocesses;++i){
             if(i==0){
                 process_queue[i].completiontime=process_queue[i].starttime+process_queue[i].bursttime;
             }
